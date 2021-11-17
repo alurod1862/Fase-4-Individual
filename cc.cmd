@@ -6,10 +6,10 @@ if NOT EXIST E:\Dep-Gandia\Prensa mkdir E:\Dep-Gandia\Prensa
 if NOT EXIST E:\Dep-Gandia\Informatica mkdir E:\Dep-Gandia\Informatica
 if NOT EXIST E:\Dep-Gandia\Investigacion_desarollo mkdir E:\Dep-Gandia\Investigacion_desarollo
 REM
-net share Dep-RRHH=E:\Dep-Gandia\RRHH /GRANT:Gandia_GL_RRHH,full
-net share Dep-Prensa=E:\Dep-Gandia\Prensa /GRANT:Gandia_GL_Prensa,full
-net share Dep-Informatica=E:\Dep-Gandia\Informatica /GRANT:Gandia_GL_Informatica,full
-net share Dep-Investigacion_desarollo=E:\Dep-Gandia\Investigacion_desarollo /GRANT:Gandia_GL_Investigacion_desarollo,full	
+net share Dep-RRHH=E:\Dep-Gandia\RRHH /GRANT:Gandia_GL_RRHH,change
+net share Dep-Prensa=E:\Dep-Gandia\Prensa /GRANT:Gandia_GL_Prensa,change
+net share Dep-Informatica=E:\Dep-Gandia\Informatica /GRANT:Gandia_GL_Informatica,change
+net share Dep-Investigacion_desarollo=E:\Dep-Gandia\Investigacion_desarollo /GRANT:Gandia_GL_Investigacion_desarollo,change
 REM
 icacls E:\Dep-Gandia\RRHH /GRANT gandia\Gandia_GL_RRHH:(RX)
 icacls E:\Dep-Gandia\Prensa /GRANT gandia\Gandia_GL_Prensa:(RX)

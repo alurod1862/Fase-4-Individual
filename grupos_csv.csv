@@ -1,1 +1,6 @@
-a
+id:Name:Path:Description:Category:Scope
+:Gandia_GL_WR-Prensa:OU=Prensa,OU=Clientes-Gandia,DC=gandia,DC=upv,DC=es:Grupo Local de  prensa lectura y esctritura:Security:Local
+:Gandia_GL_WR-Informatica:OU=Informatica,OU=Clientes-Gandia,DC=gandia,DC=upv,DC=es:Grupo Local de  informatica lectura y esctritura:Security:Local
+:Gandia_GL_WR-Investigacion_desarollo:OU=Investigacion_desarollo,OU=Clientes-Gandia,DC=gandia,DC=upv,DC=es:Grupo Local de  investigacion_desarollo lectura y esctritura:Security:Local
+:Gandia_GL_WR-RRHH:OU=RRHH,OU=Clientes-Gandia,DC=gandia,DC=upv,DC=es:Grupo Local de  recursos humanos lectura y esctritura:Security:Local
+:Gandia_GL_Lectura:OU=Comunicaciones,OU=Clientes-Gandia,DC=gandia,DC=upv,DC=es:Grupo Local de  Comunicaciones lectura:Security:Local

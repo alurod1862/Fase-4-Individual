@@ -6,15 +6,15 @@ if NOT EXIST E:\Dep-Gandia\Prensa mkdir E:\Dep-Gandia\Prensa
 if NOT EXIST E:\Dep-Gandia\Informatica mkdir E:\Dep-Gandia\Informatica
 if NOT EXIST E:\Dep-Gandia\Investigacion_desarollo mkdir E:\Dep-Gandia\Investigacion_desarollo
 REM
-net share Dep-RRHH=E:\Dep-Gandia\RRHH /GRANT:Gandia_GL_RRHH,change
-net share Dep-Prensa=E:\Dep-Gandia\Prensa /GRANT:Gandia_GL_Prensa,change
-net share Dep-Informatica=E:\Dep-Gandia\Informatica /GRANT:Gandia_GL_Informatica,change
-net share Dep-Investigacion_desarollo=E:\Dep-Gandia\Investigacion_desarollo /GRANT:Gandia_GL_Investigacion_desarollo,change
+net share Dep-RRHH=E:\Dep-Gandia\RRHH /GRANT:Gandia_GL_WR-RRHH,change /GRANT:Gandia_GL_Lectura,read
+net share Dep-Prensa=E:\Dep-Gandia\Prensa /GRANT:Gandia_GL_WR-Prensa,change /GRANT:Gandia_GL_Lectura,read
+net share Dep-Informatica=E:\Dep-Gandia\Informatica /GRANT:Gandia_GL_WR-Informatica,change /GRANT:Gandia_GL_Lectura,read
+net share Dep-Investigacion_desarollo=E:\Dep-Gandia\Investigacion_desarollo /GRANT:Gandia_GL_WR-Investigacion_desarollo,change /GRANT:Gandia_GL_Lectura,read
 REM
-icacls E:\Dep-Gandia\RRHH /GRANT gandia\Gandia_GL_RRHH:(RX)
-icacls E:\Dep-Gandia\Prensa /GRANT gandia\Gandia_GL_Prensa:(RX)
-icacls E:\Dep-Gandia\Informatica /GRANT gandia\Gandia_GL_Informatica:(RX)
-icacls E:\Dep-Gandia\Investigacion_desarollo /GRANT gandia\Gandia_GL_Investigacion_desarollo:(RX)
+icacls E:\Dep-Gandia\RRHH /GRANT gandia\Gandia_GL_WR-RRHH:(R,W)
+icacls E:\Dep-Gandia\Prensa /GRANT gandia\Gandia_GL_WR-Prensa:(R,W)
+icacls E:\Dep-Gandia\Informatica /GRANT gandia\Gandia_GL_WR-Informatica:(R,W)
+icacls E:\Dep-Gandia\Investigacion_desarollo /GRANT gandia\Gandia_GL_WR-Investigacion_desarollo:(R,W)
 REM
 icacls E:\Dep-Gandia /inheritance:d
 icacls E:\Dep-Gandia\RRHH /inheritance:d
